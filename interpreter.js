@@ -53,6 +53,11 @@ function interpreter() {
 function getVariableValue(varName) {
     var varIndex = varName.toUpperCase().charCodeAt(0) - 'A'.charCodeAt(0);
     var varValue = variables[varIndex];
+
+    if (!isNaN(varValue)) {
+        return parseInt(varValue, 10);
+    }
+
     return varValue;
 }
 
