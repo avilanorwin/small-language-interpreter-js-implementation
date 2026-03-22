@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <head>
+        <title>Language Interpreter</title>   
+        <script src="tokenizer.js"></script>
+        <script src="functions.js"></script>
+        <script src="expression_parser.js"></script>
+        <script src="interpreter.js"></script>
+    </head>
+    <body>
+        <div>
+            <textarea id="editor" cols="80" rows="20" placeholder="Enter your code here"></textarea>
+        </div>
+        <div id="console">
+        </div>
+        <div>
+            <button id="run" type="button" onclick="interpreter()">Run</button>
+        </div>
+    </body>
+</body>
+</html>
