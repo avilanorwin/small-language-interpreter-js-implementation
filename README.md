@@ -6,6 +6,8 @@ By understanding how these three constructs are implemented, learners can easily
 
 This project was developed around **2016–2017** as part of an early exploration into **compiler and interpreter design**, with the goal of creating a DSL-based test automation solution for use in a project during that time.
 
+Documentation is also described in the repository docs/Interpreter Design.docx
+
 See (https://github.com/avilanorwin/catya-test-automation
 ) for the Domain-Specific Language (DSL) test automation tool, that uses the interpreteer concept of this project. This tool was designed to minimize the boilerplate of Selenium and instead focus on the direct invocation of commands to interact with web-based applications.
 
