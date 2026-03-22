@@ -1,8 +1,13 @@
 # Small Language Interpreter (JavaScript Implementation)
 
-An experimental project that demonstrates how a simple programming language interpreter can be implemented in JavaScript. The codebase is intentionally kept concise, with minimal error handling, to highlight the core interpreter concepts—tokenization, parsing, and execution—without unnecessary complexity.
+A minimal language interpreter designed to demonstrate the core concepts of interpreter construction. It supports only three basic constructs (**print**, **for loop**, and **if**) and intentionally avoids extensive error handling to allow learners to focus on the fundamental stages of interpretation: tokenization, parsing, expression evaluation, and execution.
 
-This project was developed around **2016–2017** as part of early exploration into **compiler and interpreter design**.
+By understanding how these three constructs are implemented, learners can easily extend the interpreter to support additional features and ultimately build a fully functional programming language of their own.
+
+This project was developed around **2016–2017** as part of an early exploration into **compiler and interpreter design**, with the goal of creating a DSL-based test automation solution for use in a project during that time.
+
+See (https://github.com/avilanorwin/catya-test-automation
+) for the Domain-Specific Language (DSL) test automation tool, that uses the interpreteer concept of this project. This tool was designed to minimize the boilerplate of Selenium and instead focus on the direct invocation of commands to interact with web-based applications.
 
 ---
 
