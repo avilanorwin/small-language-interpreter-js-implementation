@@ -45,6 +45,8 @@ function processIf(program) {
     var rightValue = 0;
     var condition = "";
     var conditionResult = false;
+    var leftVar = 0;
+    var rightVar = 0;
 
     var token = getToken(program);
     
@@ -52,14 +54,16 @@ function processIf(program) {
         return  -1; //syntax error
     } 
     
-    leftValue = evaluateExpression(program);
+    leftVar = evaluateExpression(program);
+    leftValue = normalizeValue(leftVar);
     
     condition = getToken(program);
     if ("^[<>=]{1,1}$".match(condition) == false) {
         return -1 // syntax error
     }
     
-    rightValue = evaluateExpression(program);
+    rightVar = evaluateExpression(program);
+    rightValue = normalizeValue(rightVar);
     
     switch(condition) {
         case "=":

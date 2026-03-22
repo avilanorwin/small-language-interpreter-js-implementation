@@ -52,13 +52,23 @@ function interpreter() {
 
 function getVariableValue(varName) {
     var varIndex = varName.toUpperCase().charCodeAt(0) - 'A'.charCodeAt(0);
-    var varValue = variables[varIndex];
+    return variables[varIndex];
+}
 
-    if (!isNaN(varValue)) {
-        return parseInt(varValue, 10);
+function isIntegerString(value) {
+    return typeof value === "string" && /^-?\d+$/.test(value.trim());
+}
+
+function normalizeValue(value) {
+    if (typeof value === "number") {
+        return value;
     }
 
-    return varValue;
+    if (isIntegerString(value)) {
+        return parseInt(value, 10);
+    }
+
+    return value;
 }
 
 function putVariableValue(varName, varValue) {
