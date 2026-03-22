@@ -15,12 +15,27 @@
     </head>
     <body>
         <div>
-            <textarea id="editor" cols="80" rows="20" placeholder="Enter your code here"></textarea>
-        </div>
-        <div id="console">
+            <textarea id="editor" cols="80" rows="20" placeholder="Enter your code here">
+a = 5;
+b = 10;
+
+print "a: ", a;
+print "b: ", b;
+
+if (a < b) {
+    print a, " is less than ", b;
+}
+
+print "This script prints hello 10 times";
+for (i=0 to 10) {
+    print i, " hello";
+}
+            </textarea>
         </div>
         <div>
             <button id="run" type="button" onclick="interpreter()">Run</button>
+        </div>
+        <div id="console">
         </div>
     </body>
 </body>
